@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mês 1</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+      min-height: 100vh;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 850px;
+      animation: fadeUp 0.9s ease;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .month-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .month-title {
+      font-size: 2rem;
+      color: #d85d94;
+      letter-spacing: 1px;
+    }
+
+    .month-subtitle {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .back-btn {
+      background: #b04a78;
+      color: white;
+      border: none;
+      padding: 11px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 0 16px rgba(176, 74, 120, 0.18);
+    }
+
+    .back-btn:hover {
+      background: #983f68;
+      transform: scale(1.04);
+      box-shadow: 0 0 24px rgba(176, 74, 120, 0.28);
+    }
+
+    .letter {
+      background: linear-gradient(180deg, #101010 0%, #0b0b0b 100%);
+      border: 1px solid rgba(216, 93, 148, 0.15);
+      border-radius: 24px;
+      padding: 34px 28px;
+      box-shadow:
+        0 0 22px rgba(176, 74, 120, 0.10),
+        0 0 50px rgba(176, 74, 120, 0.06);
+    }
+
+    .letter-tag {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: #d85d94;
+      background: rgba(216, 93, 148, 0.08);
+      border: 1px solid rgba(216, 93, 148, 0.15);
+      padding: 8px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+
+    .letter-text {
+      font-size: 1.08rem;
+      line-height: 2;
+      color: #f5f5f5;
+      white-space: pre-line;
+    }
+
+    .letter-text::first-letter {
+      font-size: 2.8rem;
+      color: #d85d94;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .signature {
+      margin-top: 28px;
+      color: #d8d8d8;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .signature span {
+      color: #d85d94;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 14px;
+        align-items: flex-start;
+      }
+
+      .month-title {
+        font-size: 1.6rem;
+      }
+
+      .letter {
+        padding: 24px 18px;
+        border-radius: 20px;
+      }
+
+      .letter-text {
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+
+      .back-btn {
+        width: 100%;
+      }
+
+      .top-bar {
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="top-bar">
+      <div class="month-info">
+        <div class="month-title">Month 1</div>
+        <div class="month-subtitle">30 days</div>
+      </div>
+
+      <button class="back-btn" onclick="window.location.href='hub.html'">back</button>
+    </div>
+
+    <div class="letter">
+      <div class="letter-tag">a letter for you</div>
+
+      <div class="letter-text">Parece pouco pra alguns, mas nesses 30 dias de relacionamento você mudou completamente minha vida pra melhor, você me fez sentir vivo, me fez ser feliz e principalmente me fez amar novamente.
+
+Fez o suficiente pra você entrar e nunca mais sair da minha mente. Acordo pensando em você e, quando vou dormir, penso em qual sonho terei com você na noite.
+
+A cada mensagem, a cada áudio, a cada foto sua eu me apaixono mais. Mesmo de longe você me faz tão bem, algo que eu sempre busquei, algo que sempre quis.
+
+Você não é só minha namorada, é minha melhor amiga, minha esposa e minha menina.
+
+Esses 30 dias passaram voando que nem tive tempo direito pra fazer um textinho adequado pra você. Hoje faz 30 dias desde que eu te pedi em namoro, e espero que venha muito mais, porque eu quero passar o resto da minha vida com você.
+
+Quero caminhar ao seu lado e quero fazer minha vida com você. Quero que continue sendo minha namorada e futuramente minha esposa.
+
+Ainda estamos começando, mas eu prometo a cada dia melhorar um pouco mais por você.</div>
+
+      <div class="signature">
+        Eu te amo, <span>Princesa.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

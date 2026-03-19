@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+/* Tela preta */
+.tela-inicial {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botão azul claro */
+button {
+  background: #87cefa;
+  color: black;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.4rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* Hover */
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #87cefa;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

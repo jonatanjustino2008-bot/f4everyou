@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mês 3</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+      min-height: 100vh;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 850px;
+      animation: fadeUp 0.9s ease;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .month-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .month-title {
+      font-size: 2rem;
+      color: #d85d94;
+      letter-spacing: 1px;
+    }
+
+    .month-subtitle {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .back-btn {
+      background: #b04a78;
+      color: white;
+      border: none;
+      padding: 11px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 0 16px rgba(176, 74, 120, 0.18);
+    }
+
+    .back-btn:hover {
+      background: #983f68;
+      transform: scale(1.04);
+      box-shadow: 0 0 24px rgba(176, 74, 120, 0.28);
+    }
+
+    .letter {
+      background: linear-gradient(180deg, #101010 0%, #0b0b0b 100%);
+      border: 1px solid rgba(216, 93, 148, 0.15);
+      border-radius: 24px;
+      padding: 34px 28px;
+      box-shadow:
+        0 0 22px rgba(176, 74, 120, 0.10),
+        0 0 50px rgba(176, 74, 120, 0.06);
+    }
+
+    .letter-tag {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: #d85d94;
+      background: rgba(216, 93, 148, 0.08);
+      border: 1px solid rgba(216, 93, 148, 0.15);
+      padding: 8px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+
+    .letter-text {
+      font-size: 1.08rem;
+      line-height: 2;
+      color: #f5f5f5;
+      white-space: pre-line;
+    }
+
+    .letter-text::first-letter {
+      font-size: 2.8rem;
+      color: #d85d94;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .signature {
+      margin-top: 28px;
+      color: #d8d8d8;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .signature span {
+      color: #d85d94;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 14px;
+        align-items: flex-start;
+      }
+
+      .month-title {
+        font-size: 1.6rem;
+      }
+
+      .letter {
+        padding: 24px 18px;
+        border-radius: 20px;
+      }
+
+      .letter-text {
+        font-size: 1rem;
+        line-height: 1.9;
+      }
+
+      .back-btn {
+        width: 100%;
+      }
+
+      .top-bar {
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="top-bar">
+      <div class="month-info">
+        <div class="month-title">Month 3</div>
+        <div class="month-subtitle">90 days</div>
+      </div>
+
+      <button class="back-btn" onclick="window.location.href='hub.html'">back</button>
+    </div>
+
+    <div class="letter">
+      <div class="letter-tag">a letter for you</div>
+
+      <!-- 🔽 COLE SEU TEXTO AQUI 🔽 -->
+      <div class="letter-text">
+Princesa, hoje completamos 3 meses, ou melhor, 3 dias, já que tá se passando tão rápido que chega a ser mentira. Cada minuto com você parece que são segundos, cada dia com você parece que são poucas horas. O tempo com você passa tão rápido que às vezes eu até esqueço, toda história que a gente faz junto. Só queria te falar que, nesses meus 17 anos, você foi o meu melhor motivo pra continuar, foi a melhor parte da minha vida, aquele momento que, quando passa, você deseja muito conseguir viver novamente.
+Cada dia que eu passo com você se torna um dia especial. Não é igual antes — eu não me importava se era segunda, terça ou sábado e domingo, eu não dava a mínima. Mas aí você chegou e fez minha vida andar novamente. Eu acordo no domingo pensando “droga, amanhã minha namorada vai voltar pra merda daquela escola hsuajaaj”. Agora eu fico feliz quando é sexta-feira, porque sei que vou ter o melhor final de semana da minha vida.
+Cada segundo com você é uma surpresa, e cada surpresa é mais um motivo pra eu te amar um pouco mais. Eu te amo muito e obrigado por me ajudar a descobrir a vida novamente, por me ajudar a colorir ela com a cor do amor, por estar presente em todos os meus momentos — nos momentos felizes e nos tristes, nos momentos que eu viro um bebê ou até quando eu fico tarado te chamando de minha garotinha. Cada parte disso com você se torna uma memória que vai estar cravada no meu coração pelo resto da vida.
+Feliz 3 meses pra nós, bebê. Eu te amo e espero que venha muito, MAS MUITOOOOOOOO MAIS por aí. s2
+      </div>
+      <!-- 🔼 COLE SEU TEXTO AQUI 🔼 -->
+
+      <div class="signature">
+        Eu te amo, <span>Princesa.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

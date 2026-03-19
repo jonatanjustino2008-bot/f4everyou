@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hub</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .top-content {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .counter {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+
+    .counter span {
+      color: #b04a78;
+    }
+
+    .quote {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+      padding: 0 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 22px;
+      width: 100%;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border-radius: 20px;
+      padding: 32px 16px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid rgba(176, 74, 120, 0.08);
+      box-shadow: 0 0 10px rgba(176, 74, 120, 0.10);
+      opacity: 0;
+      transform: translateY(25px);
+      animation: cardAppear 0.8s ease forwards;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, border 0.28s ease;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.15s; }
+    .card:nth-child(2) { animation-delay: 0.25s; }
+    .card:nth-child(3) { animation-delay: 0.35s; }
+    .card:nth-child(4) { animation-delay: 0.45s; }
+    .card:nth-child(5) { animation-delay: 0.55s; }
+    .card:nth-child(6) { animation-delay: 0.65s; }
+    .card:nth-child(7) { animation-delay: 0.75s; }
+    .card:nth-child(8) { animation-delay: 0.85s; }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.04);
+      background: #171717;
+      border: 1px solid rgba(176, 74, 120, 0.28);
+      box-shadow:
+        0 0 18px rgba(176, 74, 120, 0.25),
+        0 0 35px rgba(176, 74, 120, 0.16);
+    }
+
+    .card:hover .month {
+      color: #d86198;
+      text-shadow: 0 0 10px rgba(216, 97, 152, 0.35);
+    }
+
+    .card:hover .days {
+      opacity: 1;
+    }
+
+    .month {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      color: #b04a78;
+      transition: 0.28s ease;
+    }
+
+    .days {
+      font-size: 0.95rem;
+      opacity: 0.75;
+      transition: 0.28s ease;
+    }
+
+    @keyframes cardAppear {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 30px 16px;
+      }
+
+      .top-content {
+        margin-bottom: 35px;
+      }
+
+      .counter {
+        font-size: 1.8rem;
+      }
+
+      .quote {
+        font-size: 0.94rem;
+      }
+
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        padding: 26px 12px;
+        border-radius: 18px;
+      }
+
+      .month {
+        font-size: 1.15rem;
+      }
+
+      .days {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-content">
+      <div class="counter"><span>240</span> days with you</div>
+      <div class="quote">
+        every month with you became a memory i never want to lose
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card" onclick="goTo('mes1.html')">
+        <div class="month">Month 1</div>
+        <div class="days">30 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes2.html')">
+        <div class="month">Month 2</div>
+        <div class="days">60 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes3.html')">
+        <div class="month">Month 3</div>
+        <div class="days">90 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes4.html')">
+        <div class="month">Month 4</div>
+        <div class="days">120 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes5.html')">
+        <div class="month">Month 5</div>
+        <div class="days">150 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes6.html')">
+        <div class="month">Month 6</div>
+        <div class="days">180 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes7.html')">
+        <div class="month">Month 7</div>
+        <div class="days">210 days</div>
+      </div>
+
+      <div class="card" onclick="goTo('mes8.html')">
+        <div class="month">Month 8</div>
+        <div class="days">240 days</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
